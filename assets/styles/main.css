@@ -48,7 +48,11 @@ b {font-weight: 400;}
   background: transparent;
   border-radius: 3.125rem;
   padding: 0.875rem 1rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
+
+.btn:hover {transform: scale(1.1);}
 
 .btn span,
 .btn i {
@@ -194,6 +198,9 @@ b {font-weight: 400;}
 
 /* ====== media queries ====== */
 @media (min-width: 768px) {
+  /* ====== base styles ====== */
+  h1 {font-size: 4rem;}
+
   /* ====== header ====== */
   .header {
     position: fixed;
@@ -209,6 +216,56 @@ b {font-weight: 400;}
   .navbar--main,
   .header__icon {min-width: 30%;}
 
+  /* ====== main content ====== */
+  .main__container {padding: 8rem 6rem 4rem 6rem;}
+
+  .main__content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  /* ====== section skills ====== */
+  .skills {padding: 4rem 6rem;}
+
   /* ====== footer ====== */
   .footer {margin: 0;}
+}
+
+@media (min-width: 1200px) {
+  /* ====== main content ====== */
+  .main__container {padding: 12rem 6rem 2rem;}
+
+  .main__content .btn {width: auto;}
+
+  /* ====== section skills ====== */
+  .skills {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .skills h2 {
+    font-size: 2.5rem;
+    width: 60%;
+  }
+
+  .skills__list {gap: 1rem;}
+
+  .skills__item {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .skills__logo {height: 3rem;}
+}
+
+@media (min-width: 1400px) {
+  /* ====== base styles ====== */
+  h1 {font-size: 6.25rem;}
+
+  /* ====== header ====== */
+  .header {padding: 1rem 15rem;}
+
+  /* ====== main content ====== */
+  .main__container {padding: 12rem 15rem 2rem;}
 }

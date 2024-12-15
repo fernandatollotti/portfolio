@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 @import url('reset.css');
 @import url('global.css');
 
@@ -12,6 +13,19 @@ body {
 
 body[data-theme="light"] .brand__logo {filter: invert(1);}
 
+h1 {
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+
+h1, h2, h3 {
+  font-family: 'League Spartan', sans-serif;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+p {font-size: 1.25rem;}
+
 a {
   color: var(--text-color);
   text-decoration: none;
@@ -20,6 +34,30 @@ a {
 a:hover {color: var(--primary-color);}
 
 i {color: var(--icon-color);}
+
+b {font-weight: 400;}
+
+/* ====== components ====== */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  width: 100%;
+  background: transparent;
+  border-radius: 3.125rem;
+  padding: 0.875rem 1rem;
+}
+
+.btn span,
+.btn i {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.btn--outline {border: 1px solid var(--primary-color);}
+
+.btn--outline span {color: var(--primary-color);} 
 
 /* ====== header ====== */
 .header {
@@ -92,6 +130,22 @@ i {color: var(--icon-color);}
   font-size: 0.75rem;
   text-transform: uppercase;
 }
+
+/* ====== main content ====== */
+.main__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2.5rem 1rem;
+}
+
+.main__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.menu--social {gap: 1rem;}
 
 /* ====== footer ====== */
 .footer {margin-bottom: 5rem;}

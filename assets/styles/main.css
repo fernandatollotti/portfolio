@@ -1,2 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('reset.css');
 @import url('global.css');
+
+/* ====== base styles ====== */
+body {
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--primary-bg-color);
+}
+
+a {text-decoration: none;}
+
+i {color: var(--icon-color);}
+
+/* ====== header ====== */
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.header__logo .brand__logo {
+  width: 3.25rem;
+  height: 3.25rem;
+}
+
+.header__icon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__icon #toggleTheme {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.navbar--main {display: none;}
+
+.menu--main {gap: 1.5rem;}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu--mobile {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid var(--border-color);
+  justify-content: space-between;
+}
+
+.menu--mobile .menu__link {
+  display: flex;
+  gap: 0.625rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+}
+
+.menu__link--active .menu__icon,
+.menu__link--active .menu__text,
+.menu__link:hover .menu__icon,
+.menu__link:hover .menu__text {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.menu__icon,
+.menu__text {color: var(--text-color);}
+
+.menu__icon {font-size: 1.5rem;}
+
+.menu__text {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+/* ====== media queries ====== */
+@media (min-width: 768px) {
+  .header {
+    position: fixed;
+    padding: 1rem 6rem;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--primary-bg-color);
+  }
+
+  .navbar--main {display: flex;}
+
+  .navbar--mobile {display: none;}
+
+  .navbar--main,
+  .header__icon {min-width: 30%;}
+}

@@ -6,10 +6,16 @@
 body {
   font-size: 1rem;
   font-family: 'Inter', sans-serif;
+  color: var(--text-color);
   background-color: var(--primary-bg-color);
 }
 
-a {text-decoration: none;}
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+a:hover {color: var(--primary-color);}
 
 i {color: var(--icon-color);}
 
@@ -21,6 +27,7 @@ i {color: var(--icon-color);}
   justify-content: space-between;
   padding: 0.5rem 1rem;
   width: 100%;
+  z-index: 2;
 }
 
 .header__logo .brand__logo {
@@ -82,8 +89,18 @@ i {color: var(--icon-color);}
   text-transform: uppercase;
 }
 
+/* ====== footer ====== */
+.footer {margin-bottom: 5rem;}
+
+.footer p {
+  font-size: .875rem;
+  text-align: center;
+  padding: 1rem;
+}
+
 /* ====== media queries ====== */
 @media (min-width: 768px) {
+  /* ====== header ====== */
   .header {
     position: fixed;
     padding: 1rem 6rem;
@@ -97,4 +114,7 @@ i {color: var(--icon-color);}
 
   .navbar--main,
   .header__icon {min-width: 30%;}
+
+  /* ====== footer ====== */
+  .footer {margin: 0;}
 }

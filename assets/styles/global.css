@@ -1,4 +1,4 @@
-:root {
+:root, [data-theme="dark"] {
   --primary-color: #F0F0F0;
   --primary-bg-color: #111217;
   --secondary-bg-color: #28292E;
@@ -7,4 +7,15 @@
   --text-color: #9A9A9C;
   --link-color: #9A9A9C;
   --icon-color: #C7C8C9;
+}
+
+[data-theme="light"] {
+  --primary-color: #0B0B0F;
+  --primary-bg-color: #E9E9E9;
+  --secondary-bg-color: #C7C8C9;
+  --border-color: #C7C8C9;
+  --title-color: #0B0B0F;
+  --text-color: #28292E;
+  --link-color: #28292E;
+  --icon-color: #56575A;
 }

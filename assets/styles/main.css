@@ -25,6 +25,13 @@ h2 {
   margin-bottom: 2rem;
 }
 
+h4 {
+  color: var(--primary-color);
+  font-weight: 400;
+  font-size: 1.15rem;
+  text-align: left;
+}
+
 h1, h2, h3 {
   font-family: 'League Spartan', sans-serif;
   text-transform: uppercase;
@@ -147,7 +154,8 @@ b {font-weight: 400;}
 
 /* ====== main content ====== */
 .main__container,
-.projects {
+.projects,
+.about {
   display: flex;
   flex-direction: column;
   padding: 1.5rem 1rem;
@@ -232,19 +240,117 @@ b {font-weight: 400;}
   color: var(--title-color);
 }
 
-.card__list {margin-left: 1rem;}
+.card__list,
+.about__list {margin-left: 1rem;}
 
-.card__item {list-style: disc;}
+.card__item,
+.about__item {list-style: disc;}
 
-.card__buttons {
+.card__buttons,
+.description__buttons {
   display: flex;
-  gap: 0.875rem;
+  flex-flow: row wrap;
+  justify-content: center;
 }
+
+.card__buttons .btn {padding: .65rem 1.25rem;}
 
 .projects .btn {
   width: auto;
   margin: auto;
 }
+
+/* ====== about ====== */
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem
+}
+
+.about__content,
+.about__career {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.about__photo {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+  border-radius: 50rem;
+  border: 1px solid var(--primary-border-color);
+}
+
+.about__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.about__icons {
+  display: flex;
+  align-items: center;
+  gap: .85rem;
+}
+
+.about__icons i {font-size: 1.25rem;}
+
+.about__career .col-1, 
+.about__career .col-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about__career .col-1 .row-1,
+.about__career .col-1 .row-2 {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem; 
+}
+
+/* accordion */
+.accordion__header {
+  width: 100%;
+  display: flex;
+  padding: 0.75rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--primary-border-color);
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  transition: ease-in-out .3s;
+}
+
+.accordion__header span {color: var(--title-color);}
+
+.accordion__header.start {border-radius: 0.25rem 0.25rem 0rem 0rem;}
+
+.accordion__header.end,
+.accordion__item.accordion--active .accordion__body.end {border-radius: 0rem 0rem 0.25rem 0.25rem;}
+
+.accordion__item.accordion--active .accordion__header.end{border-radius: 0;}
+
+.accordion__body {
+  display: none;
+  padding: 1.25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.625rem;
+  border: 1px solid var(--primary-border-color);
+}
+
+.accordion__item.accordion--active .accordion__header {background: var(--secondary-bg-color);}
+
+.accordion__item.accordion--active .accordion__body {display: flex;}
+
+.accordion__item.accordion--active .bi-caret-down-fill {transform: rotate(180deg);}
 
 /* ====== footer ====== */
 .footer {margin-bottom: 5rem;}
@@ -282,7 +388,8 @@ b {font-weight: 400;}
 
   /* ====== main content ====== */
   .main__container,
-  .projects {padding: 8rem 6rem 4rem 6rem;}
+  .projects,
+  .about {padding: 8rem 6rem 4rem 6rem;}
 
   .main__content {
     display: flex;
@@ -292,6 +399,22 @@ b {font-weight: 400;}
 
   /* ====== section skills ====== */
   .skills {padding: 4rem 6rem;}
+
+  /* ====== section about ====== */
+  .about {gap: 5rem;}
+
+  .about__content,
+  .about__career {
+    display: grid;
+    grid-template-columns: 34% 60%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+
+  .about__description h2 {text-align: left;}
+
+  .description__buttons {justify-content: flex-start;}
 
   /* ====== footer ====== */
   .footer {margin: 0;}
@@ -311,6 +434,10 @@ b {font-weight: 400;}
 @media (min-width: 1200px) {
   /* ====== base styles ====== */
   h2 {font-size: 4rem;}
+
+  h3 {font-size: 2.5rem;}
+
+  p, span, li {font-size: 1.15rem;}
 
   /* ====== main content ====== */
   .main__container {padding: 12rem 6rem 2rem;}
@@ -347,7 +474,8 @@ b {font-weight: 400;}
   .card__description,
   .card__item {font-size: 1.25rem;}
 
-  .card__buttons .btn {width: auto;}
+  .card__buttons .btn,
+  .description__buttons .btn {width: auto;}
 
   .card__body .skills__item {
     width: 4rem;
@@ -366,4 +494,8 @@ b {font-weight: 400;}
 
   /* ====== main content ====== */
   .main__container {padding: 12rem 15rem 2rem;}
+
+  .skills, 
+  .projects, 
+  .about {padding: 10rem 15rem 4rem;}
 }

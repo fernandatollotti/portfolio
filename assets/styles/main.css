@@ -128,13 +128,14 @@ b {font-weight: 400;}
 .menu {
   display: flex;
   align-items: center;
+  background: var(--primary-bg-color);
 }
 
 .menu--mobile {
   width: 100vw;
   position: fixed;
   bottom: 0;
-  border-top: 1px solid var(--border-color);
+  border-top: 1px solid var(--primary-border-color);
   justify-content: space-between;
 }
 

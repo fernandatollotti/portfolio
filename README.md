@@ -32,7 +32,7 @@ O portfólio é uma página simples, com layout responsivo, que apresenta as hab
 1. O menu de navegação permite acessar as seções do portfólio.
 2. Cada projeto é destacado com uma breve descrição e links para repositórios no GitHub.
 
-##⚙️ Funcionalidades
+## ⚙️ Funcionalidades
 - Exibição de projetos desenvolvidos
 - Links para repositórios no GitHub
 - Design responsivo para visualização em diferentes dispositivos
@@ -47,8 +47,8 @@ O portfólio é uma página simples, com layout responsivo, que apresenta as hab
 🔸 Inclusão de funcionalidades interativas com JavaScript avançado  
 🔸 Inclusão novos projetos
 
-🌟 Créditos
+## 🌟 Créditos 
 O projeto foi desenvolvido como parte de um projeto educacional da [Digital Innovation One](https://www.dio.me/en).
 
-📜 Licença
+## 📜 Licença
 Projeto está licenciado sob a licença [MIT License](https://github.com/fernandatollotti/portfolio/tree/master?tab=MIT-1-ov-file).

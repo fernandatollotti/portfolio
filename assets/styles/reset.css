@@ -4,4 +4,6 @@
   box-sizing: border-box;
   list-style: none;
   vertical-align: baseline;
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary-bg-color) transparent;
 }

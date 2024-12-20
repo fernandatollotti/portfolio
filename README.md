@@ -26,7 +26,7 @@ Para baixar o projeto para sua máquina local, siga os passos abaixo:
    cd portfolio
 3. Abra o arquivo `index.html` em seu navegador preferido para visualizar o portfólio.
 
-## 🌐 Como funciona
+## ⚡ Como funciona
 O portfólio é uma página simples, com layout responsivo, que apresenta as habilidades e projetos desenvolvidos. Ele usa HTML5 para estruturação, CSS3 para estilização e JavaScript para interatividade.
 
 1. O menu de navegação permite acessar as seções do portfólio.

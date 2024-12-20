@@ -15,7 +15,7 @@ O objetivo deste projeto é criar um portfólio que apresente meus conhecimentos
 ![CSS 3](https://img.shields.io/badge/CSS3-333333?style=for-the-badge&logo=css3&logoColor=1572B6)
 ![JavaScript](https://img.shields.io/badge/JavaScript-333333?style=for-the-badge&logo=javascript)
 
-## 🌐 Como executar o projeto
+## ⚡ Como executar o projeto
 Para baixar o projeto para sua máquina local, siga os passos abaixo:
 
 1. Clone o repositório:
@@ -26,7 +26,7 @@ Para baixar o projeto para sua máquina local, siga os passos abaixo:
    cd portfolio
 3. Abra o arquivo `index.html` em seu navegador preferido para visualizar o portfólio.
 
-## ⚡ Como funciona
+## 🌐 Como funciona
 O portfólio é uma página simples, com layout responsivo, que apresenta as habilidades e projetos desenvolvidos. Ele usa HTML5 para estruturação, CSS3 para estilização e JavaScript para interatividade.
 
 1. O menu de navegação permite acessar as seções do portfólio.

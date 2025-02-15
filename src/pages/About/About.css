@@ -1,0 +1,24 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about__intro-wrapper {padding-bottom: 1.5rem;}
+
+.about__intro code {color: var(--text-highlight-color);}
+
+.about__intro span,
+.about__intro p {display: inline;}
+
+.about__image {text-align: center;}
+
+@media (min-width: 768px) {
+  .about {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about__intro,
+  .about__image {flex: 1;}
+}

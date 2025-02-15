@@ -32,7 +32,7 @@
   --heading-sm: 1.25rem;
   --heading-md: 1.875rem;
   --heading-lg: 2.625rem; 
-  --heading-xl: 3.5rem;
+  --heading-xl: 3.125rem;
 
   /* font weight */
   --weight-light: 300;
@@ -97,7 +97,15 @@ li {list-style: none;}
 
 span {display: block;}
 
-/* ==  == */
+img {max-width: 100%;}
+
+section {
+  padding: 3rem 2rem;
+  background-color: var(--primary-color);
+  border-radius: var(--radius-lg);
+}
+
+/* == layout containers == */
 .container {
   margin: 7rem 0;
   display: flex;
@@ -105,10 +113,13 @@ span {display: block;}
   gap: 4rem;
 }
 
-.header, .main-content, .footer {margin: 0 1rem;}
+.header, .main, .footer {margin: 0 1rem;}
+
+/* == reusable styles == */
+.highlight {color: var(--highlight-color);}
 
 @media (min-width: 768px) {
-  .header, .main-content, .footer {
+  .header, .main, .footer {
     width: 90%;
     margin: 0 auto;
   }

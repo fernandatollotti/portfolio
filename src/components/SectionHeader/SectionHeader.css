@@ -1,0 +1,10 @@
+.section-header__label {
+  padding-bottom: 1rem;
+  color: var(--text-highlight-color);
+}
+
+.section-header__heading span {display: inline;}
+
+@media (min-width: 1200px) {
+  .section-header {width: 35rem;}
+}

@@ -1,0 +1,12 @@
+.link-button {
+  padding: 0.75rem;
+  background: var(--primary-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-neon-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.link-button:hover {
+  background: var(--hover-color);
+  transform: translateY(-5px);
+}

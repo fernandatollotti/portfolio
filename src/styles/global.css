@@ -1,0 +1,115 @@
+/* ==== variables ==== */
+:root {
+  /* == colors == */
+  --primary-color: #1a1a1a;
+  --secondary-color: #0d0d0d;
+  --text-color: #f2f2f2;
+  --accent-color: #c635ff;
+  --highlight-color: #39cA00;
+  --text-highlight-color: #b702ff;
+  --border-color: rgba(242, 242, 242, 0.2);
+  --hover-color: linear-gradient(var(--accent-color), #6e0199);
+  --shadow-neon-color: 
+  0 0 8px rgba(183, 2, 255, 0.4),
+  0 0 15px rgba(183, 2, 255, 0.5), 
+  0 0 30px rgba(110, 1, 153, 0.6);
+  --shadow-elevation:rgba(138, 43, 226, 0.3);
+
+  /* == border radius == */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.5rem;
+  --radius-xl: 3.125rem;
+
+  /* == typography == */
+
+  /* font family */
+  --font-family: 'Inter', sans-serif;
+  --font-secondary: 'League Spartan', sans-serif;
+
+  /* font size */
+  --font-base: 1rem;
+  --heading-sm: 1.25rem;
+  --heading-md: 1.875rem;
+  --heading-lg: 2.625rem; 
+  --heading-xl: 3.5rem;
+
+  /* font weight */
+  --weight-light: 300;
+  --weight-medium: 500;
+  --weight-bold: 700;
+
+  /* == opacity == */
+  --opacity-high: 0.7; 
+  --opacity-low: 0.4; 
+}
+
+/* == base styles == */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-base);
+  font-weight: var(--weight-light);
+  line-height: 1.5rem;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+}
+
+h1, h2, h3, h4 {
+  font-weight: var(--weight-bold);
+  font-family: var(--font-secondary);
+  padding-bottom: 3rem;
+}
+
+h1 {
+  font-size: var(--heading-xl);
+  line-height: 3.5rem;
+}
+
+h2 {
+  font-size: var(--heading-lg);
+  line-height: 2.75rem;
+}
+
+h3 {
+  font-size: var(--heading-md);
+  line-height: 2rem;
+}
+
+h4 {
+  font-size: var(--heading-sm);
+  line-height: 1.5rem;
+}
+
+a {
+  display: block;
+  color: var(--text-color);
+}
+
+button {border: none;}
+
+li {list-style: none;}
+
+span {display: block;}
+
+/* ==  == */
+.container {
+  margin: 7rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.header, .main-content, .footer {margin: 0 1rem;}
+
+@media (min-width: 768px) {
+  .header, .main-content, .footer {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

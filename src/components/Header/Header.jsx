@@ -14,9 +14,9 @@ function Header() {
         <div className="header__details">
           <span className="header__details-name">{profileData.name}</span>
           <p className="header__details-job">{profileData.job}</p>
-          <ul className="header__social-list">
+          <ul className="social-list">
             {profileData.socialsLinks.map((social, index) => (
-              <li key={index} className="header__social-item">
+              <li key={index} className="social-item">
                 <LinkButton className="link-button" href={social.url}>
                   {social.icon === 'GithubLogo' &&  <GithubLogo size={32} />}
                   {social.icon === 'LinkedinLogo' &&  <LinkedinLogo size={32} />}

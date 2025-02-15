@@ -37,7 +37,7 @@
 
 .header__details-job {opacity: var(--opacity-high);}
 
-.header__social-list {
+.social-list {
   margin-top: 2.5rem;
   gap: 1.5rem;
   display: flex;
@@ -83,7 +83,7 @@
 
   .header__details {margin: 0;}
 
-  .header__social-list {justify-content: flex-start;}
+  .social-list {justify-content: flex-start;}
 
   .header__info-list {
     grid-template-columns: repeat(2, minmax(100px, 1fr));

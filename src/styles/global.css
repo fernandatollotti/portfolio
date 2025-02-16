@@ -91,7 +91,11 @@ a {
   color: var(--text-color);
 }
 
-button {border: none;}
+button {
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+}
 
 li {list-style: none;}
 
@@ -117,6 +121,21 @@ section {
 
 /* == reusable styles == */
 .highlight {color: var(--highlight-color);}
+
+.btn {
+  background: var(--primary-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-neon-color);
+  transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-neon-hover);
+}
+
+.btn:hover,
+.tab__button--active {background: var(--hover-color);}
 
 @media (min-width: 768px) {
   .header, .main, .footer {

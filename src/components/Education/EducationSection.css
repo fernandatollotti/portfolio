@@ -1,0 +1,22 @@
+.education__cards-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.education__card {
+  padding: 1.5rem 2rem;
+  min-height: 14rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  transition: all .3s ease-in-out;
+  background: linear-gradient(var(--primary-color), var(--primary-color)) padding-box, linear-gradient(to bottom, var(--text-highlight-color), transparent) border-box;
+}
+
+.education__card:hover {border: 1px solid;}
+
+.education__card .card__info {
+  opacity: var(--opacity-high);
+  padding-bottom: 0.5rem;
+}

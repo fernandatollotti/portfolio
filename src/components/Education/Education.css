@@ -1,0 +1,10 @@
+.resume__education {padding-top: 3rem;}
+
+.resume__education h4 {padding-bottom: 1.5rem;}
+
+@media (min-width: 992px) {
+  .resume__education {
+   display: flex;
+    gap: 3rem;
+  }
+}

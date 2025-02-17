@@ -6,6 +6,7 @@
   --text-color: #f2f2f2;
   --accent-color: #c635ff;
   --highlight-color: #39cA00;
+  --text-grandient-color: linear-gradient(90deg, var(--highlight-color) 0%, rgba(57, 202, 0, 0) 100%);
   --text-highlight-color: #b702ff;
   --border-color: rgba(242, 242, 242, 0.2);
   --hover-color: linear-gradient(var(--accent-color), #6e0199);
@@ -121,6 +122,13 @@ section {
 
 /* == reusable styles == */
 .highlight {color: var(--highlight-color);}
+
+.text-gradient {
+  background: var(--text-grandient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 
 .btn {
   background: var(--primary-color);

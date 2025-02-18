@@ -1,0 +1,6 @@
+.footer {text-align: center;}
+
+.footer a {
+  display: inline;
+  color: var(--text-highlight-color);
+}

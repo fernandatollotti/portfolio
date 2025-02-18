@@ -1,0 +1,57 @@
+.button-group__link {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+}
+
+.button-group__link::before,
+.button-group__link::after {
+  font-size: 1.5rem;
+  position: relative;
+  opacity: 0;
+  color: var(--text-color);
+  transition: 0.3s ease-in-out;
+}
+
+.button-group__link::before,
+.button-group__item:nth-child(1) .button-group__link::before {
+  content: '[';
+  left: -3px;
+  transform: translateX(-6px);
+}
+
+.button-group__link::after,
+.button-group__item:nth-child(1) .button-group__link::after {
+  content: ']';
+  right: -3px;
+  transform: translateX(6px);
+}
+
+.button-group__item:nth-child(1) .button-group__link:hover::before,
+.button-group__item:nth-child(1) .button-group__link:hover::after {transform: translateX(0);}
+
+.button-group__link:hover::before {
+  content: '[';
+  left: -3px;
+  transform: translateX(-3px);
+}
+
+.button-group__link:hover::after {
+  content: ']';
+  right: -3px;
+  transform: translateX(3px);
+}
+
+.button-group__link:hover::before,
+.button-group__link:hover::after,
+.button-group__item:nth-child(1) .button-group__link::before,
+.button-group__item:nth-child(1) .button-group__link::after {opacity: 1;}
+
+.button-group__link:hover,
+.button-group__link:hover::before,
+.button-group__link:hover::after {
+  background: var(--hover-color);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: var(--accent-color);
+}

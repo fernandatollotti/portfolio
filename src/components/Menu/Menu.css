@@ -15,9 +15,18 @@
   box-shadow: 0px -4px 12px var(--shadow-elevation);
 }
 
-.button__group-item {position: relative;}
+.menu .button-group__item:nth-child(1) .button-group__link::before,
+.menu .button-group__item:nth-child(1) .button-group__link::after {opacity: 0;}
 
-.button__group-item .tooltip {
+.menu .button-group__item:nth-child(1) .button-group__link.active::before,
+.menu .button-group__item:nth-child(1) .button-group__link.active::after {opacity: 1;}
+
+.menu .button-group__link::before,
+.menu .button-group__link::after {color: var(--accent-color);}
+
+.button-group__item {position: relative;}
+
+.button-group__item .tooltip {
   opacity: 0;
   visibility: hidden;
   position: absolute;
@@ -33,11 +42,23 @@
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.button__group-item:hover .tooltip {
+.button-group__item:hover .tooltip {
   opacity: 1;
   visibility: visible; 
   pointer-events: auto;
   transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.button-group__link.active::before,
+.button-group__link.active::after {
+  opacity: 1;
+  visibility: visible; 
+} 
+
+.button-group__link:hover svg,
+.button-group__link.active svg {
+  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 @media (min-width: 922px) {
@@ -47,12 +68,13 @@
     height: 26rem;
     box-shadow: none;
     flex-direction: column;
-    padding: 1.5rem;
+    padding: 2rem;
     top: 20px;
     border-radius: 50px;
+    gap: 1.5rem;
   }
 
-  .button__group-item .tooltip {
+  .button-group__item .tooltip {
     left: auto; 
     right: calc(100% + 1.5rem); 
     top: 50%;
@@ -61,7 +83,7 @@
     visibility: hidden;
   }
 
-  .button__group-item:hover .tooltip {
+  .button-group__item:hover .tooltip {
     opacity: 1;
     visibility: visible;
     transform: translateY(-50%);

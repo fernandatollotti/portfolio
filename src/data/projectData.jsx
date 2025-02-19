@@ -2,7 +2,7 @@ export const projectData = [
   {
     key: "macena-silva",
     name: "Macena Silva Advocacia",
-    imageUrl: require("../assets/project-macena-silva.webp"),
+    imageUrl: require("../assets/projects/project-macena-silva.webp"),
     imageAlt: "Site da Macena Silva Advocacia",
     title: "Defesa dos Direitos na Área da Saúde",
     description: "Site desenvolvido para o escritório de advocacia Macena Silva, especializado em direito da saúde, auxiliando clientes em ações contra operadoras de planos de saúde e o SUS.",
@@ -17,7 +17,7 @@ export const projectData = [
   {
     key: "tempervale",
     name: "Tempervale",
-    imageUrl: require("../assets/project-tempervale.webp"),
+    imageUrl: require("../assets/projects/project-tempervale.webp"),
     imageAlt: "Site da Tempervale",
     title: "Esquadrias de Alumínio com Sofisticação",
     description: "Website institucional para a Tempervale, empresa especializada em instalação de esquadrias de alumínio, trazendo soluções elegantes e seguras para projetos arquitetônicos.",
@@ -32,7 +32,7 @@ export const projectData = [
   {
     key: "grupo-effetto",
     name: "Grupo Effetto",
-    imageUrl: require("../assets/project-grupo-effetto.webp"),
+    imageUrl: require("../assets/projects/project-grupo-effetto.webp"),
     imageAlt: "Site da Effetto Logística",
     title: "Logística Inteligente para Empresas",
     description: "Plataforma digital para a Effetto Logística, empresa que oferece soluções eficientes em transporte e armazenamento, com foco em qualidade e agilidade no setor logístico.",
@@ -47,7 +47,7 @@ export const projectData = [
   {
     key: "landing-page-stranger-things",
     name: "Landing Page Stranger Things",
-    imageUrl: require("../assets/project-stranger-things.webp"),
+    imageUrl: require("../assets/projects/project-stranger-things.webp"),
     imageAlt: "Landing Page inspirada em Stranger Things",
     title: "Landing Page Stranger Things",
     description: "Landing page inspirada no universo de Stranger Things, com design retrô, efeitos visuais imersivos e tipografia neon. Totalmente responsiva para diferentes dispositivos.",
@@ -63,7 +63,7 @@ export const projectData = [
   {
     key: "optimus-tech",
     name: "Optimus Tech",
-    imageUrl: require("../assets/project-optimus-tech.webp"),
+    imageUrl: require("../assets/projects/project-optimus-tech.webp"),
     imageAlt: "Site institucional da Optimus Tech",
     title: "Optimus Tech",
     description: "Site institucional para a empresa fictícia Optimus Tech, com design moderno, minimalista e focado em boas práticas de UI/UX.",

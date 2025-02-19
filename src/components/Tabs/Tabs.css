@@ -51,7 +51,7 @@
 }
 
 @media (min-width: 992px) {
-  .tab__container {min-height: 34rem;}
+  .tab__container {min-height: 38rem;}
 
   .tab__content {
     position: absolute;

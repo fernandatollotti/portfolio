@@ -2,7 +2,7 @@ import "./EducationSection.css";
 
 function EducationSection({title, icon: Icon, category, data}) {
   return (
-    <div className="education">
+    <div className={category}>
       <h3><Icon size={24} /> {title}</h3>
       <div className="education__cards-container">
         {data.filter(item => item.key === category)

@@ -11,7 +11,7 @@ export const educationData = [
     name:"Imersão Dev com Google Gemini",
     date: "07/2024",
     local: "Alura",
-    content: "A Imersão Dev com Google Gemini da Alura ensina desenvolvimento de software com ferramentas do Google Gemini, focando em boas práticas e soluções inovadoras em projetos reais."
+    content: "A Imersão Dev ensina desenvolvimento de software com ferramentas do Google Gemini, focando em boas práticas e soluções inovadoras em projetos reais."
   },
   {
     key: "bootcamp",

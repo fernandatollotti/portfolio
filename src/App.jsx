@@ -1,6 +1,9 @@
 import Header from "./components/Header/Header";
-import About from "./pages/About/About";
-import "./styles/global.css"
+import Footer from "./components/Footer/Footer";
+import Menu from "./components/Menu/Menu";
+import AppRoutes from "./routes/routes";
+import "./styles/global.css";
+import "./App.css";
 
 function App() {
   return (
@@ -8,8 +11,10 @@ function App() {
       <div className="container">
         <Header/>
         <main className="main">
-          <About/>
+          <AppRoutes/>
+          <Menu/>
         </main>
+        <Footer/>
       </div>
     </>
   )

@@ -1,0 +1,6 @@
+@media (min-width: 922px) {
+  .main {
+    display: flex;
+    gap: 3rem;
+  }
+}

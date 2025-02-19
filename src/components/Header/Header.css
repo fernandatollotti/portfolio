@@ -68,7 +68,6 @@
 
   .header__info-list {
     text-align: left;
-    display: grid;
     align-content: center;
     height: 100%;
   }
@@ -90,4 +89,6 @@
     grid-template-rows: 50px 50px;
     grid-auto-flow: column;
   }
+
+  .header__info-item:nth-child(2) {grid-column: span 2;}
 }

@@ -1,6 +1,5 @@
 import { GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
 import { profileData } from "../../data/profileData";
-// import avatar from "../../assets/avatar.png";
 import LinkButton from "../../components/LinkButton/LinkButton";
 import "./Header.css"
 

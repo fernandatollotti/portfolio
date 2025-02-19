@@ -1,3 +1,4 @@
+import logo from "../../assets/logo.png";
 import "./Footer.css";
 
 function Footer() {
@@ -5,7 +6,8 @@ function Footer() {
 
   return (
     <footer className="footer">
-      <p>© {currentYear}. Todos os direitos reservados por <a href="/">Fernanda Tollotti</a>.</p>
+      <img src={logo} alt="Logo da Fernanda Tollotti" loading="lazy" />
+      <p>© {currentYear} - Todos os direitos reservados por <a href="/">Fernanda Tollotti</a>.</p>
     </footer>
   )
 }

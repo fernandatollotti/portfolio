@@ -28,6 +28,8 @@
 
 .project__list-item dd {opacity: var(--opacity-high);}
 
+.project__image {width: 100%;}
+
 .button-group__list {
   margin-top: 3rem;
   gap: 1.5rem;
@@ -42,19 +44,17 @@
   font-size: 1.125rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .project__item {flex-direction: row;}
 
   .project__image-wrapper,
   .project__content {flex: 1;}
-}
-
-@media (min-width: 1200px) {
-  .project__image-wrapper {flex: 1;}
-
-  .project__content {flex: 2;}
 
   .button-group__list {justify-content: start;}
 
   .button-group__item {justify-content: space-between;}
+}
+
+@media (min-width: 1200px) {
+  .project__content {flex: 2;}
 }

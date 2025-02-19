@@ -5,13 +5,13 @@ export const skillData = [
     listTools: [
       {
         key: "html",
-        label: "HTML 5",
+        label: "HTML5",
         icon: require("../assets/icons/html5.webp"),
         imageAlt: "Ícone do HTML 5"
       },
       {
         key: "css",
-        label: "CSS 3",
+        label: "CSS3",
         icon: require("../assets/icons/css3.webp"),
         imageAlt: "Ícone do CSS 3"
       },

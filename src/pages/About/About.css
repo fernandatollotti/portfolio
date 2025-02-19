@@ -13,7 +13,7 @@
 
 .about__image {text-align: center;}
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .about {
     flex-direction: row;
     align-items: center;

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio profissional de Fernanda Tollotti, desenvolvedora front-end especializada em criar interfaces web dinâmicas, responsivas e otimizadas para experiência do usuário.">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/svg+xml">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/styles/main.css">
+
+    <title>Fernanda Tollotti | Portfólio</title>
+  </head>
+  <body data-theme="dark">
+    <header class="header">
+      <nav class="navbar--main">
+        <ul class="menu menu--main">
+          <li class="menu__item">
+            <a href="#home" class="menu__link menu__link--active">
+              <span class="menu__text">Home</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#projetos" class="menu__link">
+              <span class="menu__text">Projetos</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#sobre" class="menu__link">
+              <span class="menu__text">Sobre</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a href="#contato" class="menu__link">
+              <span class="menu__text">Contato</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__logo">
+        <img src="./assets/images/logo.png" alt="Logo FT" class="brand__logo">
+      </div>
+      <div class="header__icon">
+        <i class="bi bi-sun" id="toggleTheme"></i>
+      </div>
+    </header>
+    <nav class="navbar--mobile">
+      <ul class="menu menu--mobile">
+        <li class="menu__item">
+          <a href="#home" class="menu__link menu__link--active">
+            <i class="menu__icon bi bi-house"></i>
+            <span class="menu__text">Home</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#projetos" class="menu__link">
+            <i class="menu__icon bi bi-window-stack"></i>
+            <span class="menu__text">Projetos</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#sobre" class="menu__link">
+            <i class="menu__icon bi bi-person"></i>
+            <span class="menu__text">Sobre</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#contato" class="menu__link">
+            <i class="menu__icon bi bi-envelope"></i>
+            <span class="menu__text">Contato</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main class="main__container">
+     <div class="main__content">
+      <h1><b>Soluções Criativas &</b> Desenvolvimento Front-end</h1>
+      <p>Fernanda Tollotti, São Bernardo do Campo-SP, Desenvolvedora Front-end.</p>
+      <ul class="menu menu--social">
+        <li class="menu__item">
+          <a href="https://github.com/fernandatollotti" target="_blank" class="menu__link">
+            <i class="menu__icon bi bi-github"></i>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="https://www.linkedin.com/in/fernanda-tollotti" target="_blank" class="menu__link">
+            <i class="menu__icon bi bi-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+      <button class="btn btn--outline">
+        <span>Ver projetos</span>
+        <i class="bi bi-arrow-down-right"></i>
+      </button>
+     </div>
+    </main>
+    <section class="skills">
+      <h2>Conhecimento nas principais tecnologias do Front-End</h2>
+      <ul class="skills__list">
+        <li class="skills__item">
+          <img class="skills__logo" src="./assets/images/technologies/html5.svg" alt="Logo do HTML 5" title="HTML 5">
+        </li>
+        <li class="skills__item">
+          <img class="skills__logo" src="./assets/images/technologies/css3.svg" alt="Logo do CSS 3" title="CSS 3">
+        </li>
+        <li class="skills__item">
+          <img class="skills__logo" src="./assets/images/technologies/javascript.svg" alt="Logo do JavaScript" title="JavaScript">
+        </li>
+      </ul>
+    </section>
+    <section class="projects">
+      <h2>Projetos</h2>
+      <div class="projects__container">
+        <div class="projects__card">
+          <img class="card__cover" src="./assets/images/projects/project-01.jpg" alt="Projeto do Mundo Invertido">
+          <div class="card__body">
+            <h3 class="card__title">Mundo Invertido</h3>
+            <p class="card__description">Landing page do Stranger Things</p>
+            <ul class="card__list">
+              <li class="card__item">Tema claro e escuro;</li>
+              <li class="card__item">Galeria de fotos;</li>
+              <li class="card__item">Vídeo do trailer.</li>
+            </ul>
+            <ul class="skills__list">
+              <li class="skills__item">
+                <img class="skills__logo" src="./assets/images/technologies/html5.svg" alt="Logo do HTML 5" title="HTML 5">
+              </li>
+              <li class="skills__item">
+                <img class="skills__logo" src="./assets/images/technologies/css3.svg" alt="Logo do CSS 3" title="CSS 3">
+              </li>
+              <li class="skills__item">
+                <img class="skills__logo" src="./assets/images/technologies/javascript.svg" alt="Logo do JavaScript" title="JavaScript">
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <a href="https://landing-page-stranger-things.netlify.app/" target="_blank">
+                <button class="btn btn--outline">
+                  <span>Prévia do projeto</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </a>
+              <a href="https://github.com/fernandatollotti/landing-page-stranger-things" target="_blank">
+                <button class="btn">
+                  <span>Repositório</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__card card--reverse">
+          <img class="card__cover" src="./assets/images/projects/project-02.jpg" alt="Spider-man Multiverse">
+          <div class="card__body">
+            <h3 class="card__title">Spider-man Multiverse</h3>
+            <p class="card__description">Website</p>
+            <ul class="card__list">
+              <li class="card__item">Carrossel de cards dos diferentes Spider-Man.</li>
+              <li class="card__item">Galeria de fotos com cenas dos filmes.</li>
+              <li class="card__item">Informações do filme: ano, diretor e sinopse.</li>
+            </ul>
+            <ul class="skills__list">
+              <li class="skills__item">
+                <img class="skills__logo" src="./assets/images/technologies/html5.svg" alt="Logo do HTML 5" title="HTML 5">
+              </li>
+              <li class="skills__item">
+                <img class="skills__logo" src="./assets/images/technologies/css3.svg" alt="Logo do CSS 3" title="CSS 3">
+              </li>
+              <li class="skills__item">
+                <img class="skills__logo" src="./assets/images/technologies/javascript.svg" alt="Logo do JavaScript" title="JavaScript">
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <a href="https://spiderman-multiverse-app.netlify.app/" target="_blank">
+                <button class="btn btn--outline">
+                  <span>Prévia do projeto</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </a>
+              <a href="https://github.com/fernandatollotti/spiderman-multiverse" target="_blank">
+                <button class="btn">
+                  <span>Repositório</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__card">
+          <img class="card__cover" src="./assets/images/projects/project-03.jpg" alt="Elenco do São Paulo Futebol Clube">
+          <div class="card__body">
+            <h3 class="card__title">Elenco S.P.F.C</h3>
+            <p class="card__description">Buscador do elenco do São Paulo</p>
+            <ul class="card__list">
+              <li class="card__item">Filtragem o elenco pelo nome ou posição.</li>
+            </ul>
+            <ul class="skills__list">
+              <li class="skills__item">
+                <img class="skills__logo" src="./assets/images/technologies/html5.svg" alt="Logo do HTML 5" title="HTML 5">
+              </li>
+              <li class="skills__item">
+                <img class="skills__logo" src="./assets/images/technologies/css3.svg" alt="Logo do CSS 3" title="CSS 3">
+              </li>
+              <li class="skills__item">
+                <img class="skills__logo" src="./assets/images/technologies/javascript.svg" alt="Logo do JavaScript" title="JavaScript">
+              </li>
+            </ul>
+            <div class="card__buttons">
+              <a href="https://spfc-elenco-app.netlify.app/" target="_blank">
+                <button class="btn btn--outline">
+                  <span>Prévia do projeto</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </a>
+              <a href="https://github.com/fernandatollotti/spfc-elenco-app" target="_blank">
+                <button class="btn">
+                  <span>Repositório</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/fernandatollotti" target="_blank">
+          <button class="btn btn--outline">
+            <span>Ver todos os projeto</span>
+            <i class="bi bi-arrow-up-right"></i>
+          </button>
+        </a>
+      </div>
+    </section>
+    <section class="about">
+      <div class="about__content">
+        <img class="about__photo" src="./assets/images/avatar.jpg" alt="Avatar da Fernanda Tollotti">
+        <div class="about__description">
+          <h2>Sobre mim</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quaerat impedit quis nulla laborum qui, ea sed voluptatibus dolorem! Quis?</p>
+          <div class="description__buttons">
+            <a href="www.linkedin.com/in/fernanda-tollotti" target="_blank">
+              <button class="btn btn--outline">
+                <span>Conecte-se comigo</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </a>
+            <a href="https://github.com/fernandatollotti" target="_blank">
+              <button class="btn">
+                <span>Currículo</span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="about__career">
+        <div class="col-1">
+          <div class="row-1">
+            <h3>Formação</h3>
+            <h4>Produção Multimídia</h4>
+            <span>Jul 2017 - Jul 2019</span>
+            <div class="about__icons">
+              <i class="bi bi-bank"></i>
+              <span>Universidade Metodista de São Paulo</span>
+            </div>
+          </div>
+          <div class="row-2">
+            <h3>Experiências</h3>
+            <h4>Assistente de Gestão de Projetos</h4>
+            <span>CRP Mango. Set 2023 - Ago 2024</span>
+            <span>Atuação no gerenciamento de projetos para websites, incluindo o planejamento, execução e acompanhamento de cronogramas, coordenação de equipes e comunicação com clientes para garantir a entrega.</span>
+            <ul class="about__list">
+              <li class="about__item">Elaboração e gestão de cronogramas de desenvolvimento de websites;</li>
+              <li class="about__item">Coordenação de equipes multidisciplinares;</li>
+              <li class="about__item">Gestão de relacionamento com clientes, alinhando expectativas e necessidades;</li>
+              <li class="about__item">Monitoramento da qualidade e entrega de projetos dentro dos prazos estipulados.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-2">
+          <h3>Cursos</h3>
+          <div id="accordion">
+            <div class="accordion__item accordion--active">
+              <button class="accordion__header start">
+                <span>Ri Happy - Front-end do Zero</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body">
+                <p>Digital Innovation One. Fev 2023. 75hs.</p>
+                <p>Bootcamp focado em dominar a trinca fundamental do desenvolvimento Front-End: HTML, CSS e JavaScript. Com uma base estruturada de conteúdos, inclui a criação de 10 projetos práticos, como páginas web responsivas e dinâmicas, com diferentes temáticas. </p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header">
+                <span>GFT Start #6 - Lógica de Programação</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body">
+                <p>Digital Innovation One. Out 2024. 47 hrs</p>
+                <p>Bootcamp com o objetivo de ensinar lógica de programação, fundamentos de programação orientada a objetos e como aplicar esses conceitos na sua primeira linguagem de programação.</p>
+              </div>
+            </div>
+            <div class="accordion__item">
+              <button class="accordion__header end">
+                <span>Imersão Dev com Google Gemini</span>
+                <i class="bi bi-caret-down-fill"></i>
+              </button>
+              <div class="accordion__body end">
+                <p>Alura. Set 2024.</p>
+                <p>Bootcamp com foco em práticas de desenvolvimento web, explorando o uso de APIs e utilizando a ferramenta Gemini como suporte para o projeto.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <h2>Contate-me</h2>
+      <p>Estou disponível para serviços e novas conexões. Contate-me via 
+        e-mail e conecte-se comigo através das minhas redes sociais.
+      </p>
+      <ul class="menu menu--social">
+        <li>
+          <a class="menu__link" href="https://github.com/fernandatollotti" target="_blank">
+            <i class="menu__icon bi bi-github"></i>
+            <span>GitHub</span>
+          </a>
+        </li>
+        <li>
+          <a class="menu__link" href="https://www.linkedin.com/in/fernanda-tollotti" target="_blank">
+            <i class="menu__icon bi bi-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+        </li>
+      </ul>
+      <a href="mailto:fernandatollotti@gmail.com">
+        <button class="btn btn--primary">
+          <span class="email">fernandatollotti@gmail.com</span>
+        </button>  
+      </a>
+    </section>
+    <footer class="footer">
+      <p>© 2024. Todos os Direitos Reservados - Fernanda Tollotti. Desenvolvido por <a href="https://github.com/fernandatollotti" target="_blank">FT</a></p>
+    </footer>
+
+    <!-- js -->
+    <script src="./assets/scripts/main.js"></script>
+  </body>
+</html>

@@ -33,6 +33,7 @@
   font-size: var(--heading-md);
   font-weight: var(--weight-bold);
   padding-bottom: 0.75rem;
+  line-height: 2.5rem;
 }
 
 .header__details-job {opacity: var(--opacity-high);}

@@ -33,8 +33,6 @@
 .button-group__list {
   margin-top: 3rem;
   gap: 1.5rem;
-  display: flex;
-  justify-content: space-between;
 }
 
 .button-group__item {
@@ -50,7 +48,10 @@
   .project__image-wrapper,
   .project__content {flex: 1;}
 
-  .button-group__list {justify-content: start;}
+  .button-group__list {
+    display: flex;
+    justify-content: start;
+  }
 
   .button-group__item {justify-content: space-between;}
 }

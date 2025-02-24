@@ -1,13 +1,10 @@
 .services__list {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(2, 1fr);
 }
 
 @media (min-width: 768px) {
-  .services__list {
-    grid-template-columns: repeat(4, 1fr);
-  }
+  .services__list {grid-template-columns: repeat(4, 1fr);}
 }
 
 @media (min-width: 992px) {

@@ -22,7 +22,7 @@
 
 .tab__content {
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 2rem 0;
   position: relative;
   top: 0;
 }
@@ -51,7 +51,7 @@
 }
 
 @media (min-width: 992px) {
-  .tab__container {min-height: 38rem;}
+  .tab__container {min-height: 42rem;}
 
   .tab__content {
     position: absolute;

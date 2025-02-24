@@ -7,7 +7,7 @@
 
 .resume__education h4 {padding-bottom: 1.5rem;}
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .resume__education {
     flex-direction: row;
     gap: 2rem;

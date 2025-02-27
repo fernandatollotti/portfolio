@@ -12,7 +12,6 @@ export const tabsData = [
           <li className="tab__task-item">Desenvolvimento de sites utilizando WordPress com temas prontos e Elementor, além de ajustes técnicos com HTML, CSS, JS quando necessário. Em alguns projetos, utilizei o Wix para soluções mais rápidas e práticas.</li>
           <li className="tab__task-item">Coordenação de projetos de grande porte de forma independente, garantindo a entrega dentro dos prazos e com alta qualidade, gerenciando as etapas de desenvolvimento, comunicação com clientes e ajustes conforme o feedback.</li>
           <li className="tab__task-item">Participação em reuniões de briefing com a equipe e clientes para definir objetivos e alinhar expectativas, garantindo que os projetos atendessem às necessidades e requisitos.</li>
-          <li className="tab__task-item">Participação em reuniões de briefing com a equipe e clientes para definir objetivos e alinhar expectativas, garantindo que os projetos atendessem às necessidades e requisitos.</li>
         </ul>
       </>
     )  

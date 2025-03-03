@@ -82,5 +82,27 @@ export const skillData = [
         imageAlt: "Ícone do Figma"
       }
     ]
+  },
+  {
+    skillKey: "practices",
+    label: "Metodologias & Boas práticas", 
+    listTools: [
+      {
+        key: "BEM",
+        label: "BEM (Block Element Modifier)"
+      },
+      {
+        key: "scrum",
+        label: "Scrum"
+      },
+      {
+        key: "kanban",
+        label: "Kanban"
+      },
+      {
+        key: "mobile-first",
+        label: "Mobile First"
+      }
+    ]
   }
 ];

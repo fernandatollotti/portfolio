@@ -2,7 +2,7 @@ export const educationData = [
   {
     key: "course",
     name:"Produção Multimídia",
-    date: "01/2024",
+    date: "07/2024 - 07/2019",
     local: "Universidade Metodista de São Paulo",
     content: "Tecnólogo em Produção em Multimídia, com ênfase em criação de conteúdos digitais e audiovisuais."
   },

@@ -27,14 +27,12 @@ function Skills() {
           <ul className="skills__cards">
           {skillData.map(skillCategory => (
               skillCategory.listTools.map(tool => (
-                <li className="skills__item" key={tool.key}>
-                  {tool.icon && (
-                    <img src={tool.icon} alt={tool.imageAlt || "Ícone"} loading="lazy" />
-                  )}
-                  {tool.label && (
-                    <span className="skills__label">{tool.label}</span>
-                  )}
+                (tool.icon && tool.label) && (
+                  <li className="skills__item" key={tool.key}>
+                  <img src={tool.icon} alt={tool.imageAlt} loading="lazy" />
+                  <span className="skills__label">{tool.label}</span>
                 </li>
+                )
               ))
             ))}
           </ul>

@@ -4,7 +4,7 @@ export const profileData = {
   avatar: require("../assets/avatar.png"),
   photo: require("../assets/profile.png"),
   email: "fernandatollotti@gmail.com",
-  services: ["Websites", "Web design", "Otimização"],
+  services: ["Websites", "UX/UI", "Manutenção"],
   location: "São Paulo, Brasil",
   socialsLinks: [
     {

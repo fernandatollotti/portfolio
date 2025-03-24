@@ -10,6 +10,11 @@
 
 .about__intro code {color: var(--text-highlight-color);}
 
+.about__intro .badge {
+  padding: 0.5rem;
+  background-color: var(--text-highlight-color);
+}
+
 .about__intro span,
 .about__intro p {display: inline;}
 

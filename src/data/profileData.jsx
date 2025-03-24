@@ -1,6 +1,6 @@
 export const profileData = {
   name: "Fernanda Tollotti",
-  job: "Desenvolvedora Front-End",
+  job: "Developer Front-End",
   avatar: require("../assets/avatar.png"),
   photo: require("../assets/profile.png"),
   email: "fernandatollotti@gmail.com",

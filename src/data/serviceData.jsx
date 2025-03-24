@@ -22,13 +22,13 @@ export const serviceData = [
     )
   },
   {
-    key: "performance",
-    image: require("../assets/service-performance.jpg"),
-    altText: "Mulher analisando a interface de um site em um computador, com elementos de UI flutuando na tela, representando otimização de desempenho",
-    title: "Performance",
+    key: "maintenance",
+    image: require("../assets/service-maintenance.jpg"),
+    altText: "Pessoa trabalhando na manutenção de um site em um computador, com ícones de atualização e configurações ao redor, representando suporte contínuo",
+    title: "Manutenção",
     description: (
       <p>
-        Melhoria no desempenho de sites, otimizando tempo de carregamento e eficiência.
+        Atualizações, correções e suporte contínuo para manter seu site seguro, funcional e sempre atualizado.
       </p>
     )
   },
